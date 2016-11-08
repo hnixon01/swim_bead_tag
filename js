@@ -6,10 +6,10 @@
   * fill in bead block when event swam
   * add JO star if time is beat
   * add personal best time star if it occurs
-*Bead Blocks
+* Bead Blocks
   * "depress" blocks/stars and launch window/alert that says when time or bead was acheived/earned
 
-*Navigation
+* Navigation
    * maybe?  fairly simple site, so might not need to use js
    
 
