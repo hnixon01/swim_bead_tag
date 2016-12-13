@@ -1,20 +1,10 @@
 <html>
 <head>
 
-  <title>Iavarone, Siena</title>
-    
-  <link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
-</head>
+	<title>ADD BEAD</title>
 
-<div id="nav">
-    <div id = "navinside">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_new.html" target="_blank">About</a>
-            <li><a href="swimmer_flip.html" target="_blank">Swimmers</a>
-    </ul>
-  </div>
-</div>
+	<link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
+</head>
 
 <body>
 
@@ -25,16 +15,16 @@ window.onunload=function()
 
 </script>
 
-<br>
-<h3> Siena Iavarone </h3>
-<br>
 
-   <a class="texthover" title="Siena Iavarone"><img src="images/iavarone_siena.jpg" id="swimmer" alt="Siena Iavarone" height = "250"> </a>
+<h1> THIS IS RUQAYYAH's PAGE  </h1>
+
+   <a class="texthover" title="Ruqayyah Abouraya"><img src="images/abouraya_ruqayyah.png" id="ruki" alt="Ruqayyah Abouraya" height = "200"> </a>
+	<br>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
+<br>
 
 <fieldset class="group">
 <legend> Select Distance and Stroke </legend>
@@ -61,10 +51,31 @@ window.onunload=function()
     
 </div>
 
+<br>
+
+<script>
+//does an alert based on which strokes are checked 
+$(document).ready(function() {
+  var ckbox = $("input[name='stroke']");
+  var chkId = '';
+  $('input').on('click', function() {
+    
+    if (ckbox.is(':checked')) {
+      $("input[name='stroke']:checked").each ( function() {
+            chkId = $(this).val() + ",";
+        chkId = chkId.slice(0, -1);
+      });
+       
 
 
+       alert( $(this).val() ); // return all values of checkboxes checked
+       alert(chkId); // return value of checkbox checked
+       output +=  this.value + ", ";
+    }     
+  });
+});
 
-
+</script>
 
 <div id="images">
 </div>
@@ -72,7 +83,7 @@ window.onunload=function()
 <script>
 
 //Add event handlers to all checkboxes:
-//Displays immages based on which stroke is selected.
+//Displays immages based on which stroke is selsected.
 var checkboxesContainer = document.getElementById('checkboxes');
 var imagesContainer = document.getElementById('images');
 var inputElements = checkboxesContainer.getElementsByTagName('input');
@@ -102,6 +113,6 @@ for(i = 0; element = inputElements[i]; i++) {
 
 </div>
 
-    </body>
-    </html>
+	</body>
+	</html>
 

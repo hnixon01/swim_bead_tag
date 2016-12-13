@@ -1,0 +1,103 @@
+
+<form name ="stroke">Select the Distance and Stroke<p> <form action="dummy" method="post"><select id="stroke" size="1">
+
+    <option value="200 Butterfly">200 Butterfly</option>
+    <option value="100 Butterfly">100 Butterfly</option>
+    <option value="100 Butterfly">50 Butterfly</option>
+    <option value="200 Backstroke">200 Backstroke</option>
+    <option value="100 Backstroke">100 Backstroke</option>
+    <option value="50 Backstroke">50 Backstroke</option>
+    <option value="200 Breaststroke">200 Breaststroke</option>
+    <option value="100 Breaststroke">100 Breaststroke</option>
+    <option value="50 Breaststroke">50 Breaststroke</option>
+    <option value="500 Freestyle">500 Freestyle</option>
+    <option value="200 Freestyle">200 Freestyle</option>
+    <option value="100 Freestyle">100 Freestyle</option>
+    <option value="50 Freestyle">50 Freestyle</option>
+    <option value="200 Individual Medley">200 Individual Medley</option>
+    <option value="100 Individual Medley">100 Individual Medley</option>
+</select>
+</form>
+
+<button type="button" onclick="listStroke()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function listStroke() {
+    var x = document.getElementById("stroke").value;
+    document.getElementById("demo").innerHTML = "You Swam " + x;
+}
+
+</script>
+<br>
+
+<p><b>First time you swam this event?</b></p>
+<p id="demo1"></p>
+
+<button type="button" onclick="yesNew()">Yes</button>
+<button type="button" onclick="noNew()">No</button>
+
+<script>
+function yesNew() {
+    document.getElementById("demo1").innerHTML = "<i>You Earned an Event Bead!</i>";
+}
+
+function noNew() {
+    document.getElementById("demo1").innerHTML = "<i>Event Repeater!</i>";
+}
+
+</script>
+
+
+<br>
+
+<p><b>Is it a Junior Olympic Time?</b></p>
+<p id="demo2"></p>
+
+<button type="button" onclick="yesJO()">Yes</button>
+<button type="button" onclick="noJO()">No</button>
+
+<script>
+function yesJO() {
+    document.getElementById("demo2").innerHTML = "<i>That's Great.  See you at the University of Maryland in March!</i>";
+}
+
+function noJO() {
+    document.getElementById("demo2").innerHTML = "<i>There's always another race!</i>";
+}
+
+</script>
+
+
+<br>
+<br>
+<p><b>Is it a Personal Best Time?</b></p>
+<p id="demo3"></p>
+
+<button type="button" onclick="yesPB()">Yes</button>
+<button type="button" onclick="noPB()">No</button>
+
+<script>
+function yesPB() {
+    document.getElementById("demo3").innerHTML = "<i>That's Great.  Well Done!</i>";
+}
+
+function noPB() {
+    document.getElementById("demo3").innerHTML = "<i>Better luck next time!</i>";
+}
+
+</script>
+
+<br>
+<br>
+<br>
+
+        
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<head>
+
+	<title>jo check</title>
+
+	<link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
+</head>
+
+<body>
+
+
+<html>
+
+<head>
+<h1> THIS IS RUQAYYAH's PAGE  </h1>
+
+   <a class="texthover" title="Ruqayyah Abouraya"><img src="images/abouraya_ruqayyah.png" id="ruki" alt="Ruqayyah Abouraya" height = "200"> </a>
+	<br>
+
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = "Hello Ruqayyah.  It is" + d.toDateString();
+//These are the beads that you won at the last meet. Have them float in.. based on check boxes.  
+
+</script>
+
+
+
+<p> These are the event beads you won at the last meet.  Well done! </p>
+
+
+<br>
+<br>
+
+
+
+<div id="content">
+  <div>
+      
+      <br>
+      
+      <p>Do you have a JO Qualifying time?<p/>
+      <p>Fill in the  to see if you have qualified for a Junior Olympics.<br>
+        (Time can be entered as <i>mm:ss.00</i> (minutes, seconds, hundredths, e.g. 1:14.88) or <i>ss.00</i> (seconds, hundredths, e.g. 54.09).</p><br>
+
+    
+      <br>
+      
+      <script>
+
+function validate()  {
+  var Fly50 = document.f1.fly50.value;
+  var Fly50_JO = 37.39
+  if (Fly50 <= Fly50_JO ) {
+    alert("You got a JO, Way to go!");
+    return true;
+  
+  }  
+  else {
+    if (Fly50 > Fly50_JO) {
+      alert("You'll get it next time!");
+      return false;
+      }
+  }
+
+
+}
+
+</script>
+
+
+<form name="f1" 
+action="dummy" method="post">
+
+
+Enter yourtime: <input type="text" name="fly50"></form>
+
+
+
+
+<form name="joTime"><form action="dummy" method ="post">
+ 
+<table>
+              
+ 
+ <td>Age</td>
+<td><select name="age" >
+<option value=""></option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+</select></td>     
+                <tr>
+              
+                <tr>  
+
+<td>Gender</td>
+<td><select name="gender" >
+<option value=""></option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select></td> 
+        
+                <tr>
+              
+                <tr>
+
+<td>Stroke</td>
+<td><select name="stroke" >
+<option value=""></option>
+<option value="Free">Freestyle</option>
+<option value="Back">Backstroke</option>
+<option value="Breast">Breaststroke</option>
+<option value="Fly">Butterfly</option>
+<option value="IM">Individual Medley</option>
+</select></td>
+         
+                <tr>
+              
+                <tr>
+<td>Distance</td>
+<td><select name="distance" >
+<option value=""></option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="200">200</option>
+</select></td>
+
+
+                <tr>
+              
+                <tr>
+
+                  
+<td><select name="time">
+<option value="time">Enter Time</option>
+</select></td>
+
+<td><input type="text" name="time"  size="12" /></td>
+
+
+
+
+</table>
+    </div>
+
+ </form>
+
+ <button type="button" onclick="validate()">Submit</button>
+ 
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<script>
+    function ckTime(stroke);
+
+
+
+

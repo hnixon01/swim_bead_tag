@@ -1,0 +1,97 @@
+
+<html>
+<head>
+
+	<title>Swimmers</title>
+    
+	<link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
+
+
+
+
+
+<div id="nav">
+    <div id = "navinside">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_new.html">About</a>
+            <li><a href="swimmer_flip.html" target="_blank">Swimmers</a>
+    </ul>
+  </div>
+</div>
+
+
+<br>
+
+<h1> BEA(t)D my TIME </h1>
+<h2> Swimming Incentive Program</h2>
+
+
+<br><br>
+
+
+<script>
+var revert = new Array();
+var inames = new Array("abourayaru", "abourayam", "chinla", "katzra", "alguardka", "alguardki", "iavaronesi");
+
+// Preload
+if (document.images) {
+  var flipPic = new Array();
+  for(i=0; i< inames.length; i++) {
+    flipPic[i] = new Image();
+    flipPic[i].src = "images/"+inames[i]+"2.jpg";
+  }
+}
+
+function over(num) {
+  if(document.images) {
+  	 revert[num]=document.images[inames[num]].src;
+     document.images[inames[num]].src = flipPic[num].src;
+  }
+}
+function out(num) {
+  if(document.images) document.images[inames[num]].src = revert[num];
+}
+</script>
+
+</head>
+<body>
+
+<div id ="img">
+
+<a href="ru_abouraya.html" target="_blank" >
+<img src="images/abourayaru1.jpg" height = "150" name="abourayaru" onmouseover="over(0)" onmouseout="out(0)"> </a>
+<br>
+
+<a target="_blank" href="mo_abouraya.html">
+<img src="images/abourayam1.jpg" name="abourayam" height = "150" onmouseover="over(1)" onmouseout="out(1)"> </a>
+<br>
+
+<a target="_blank" href="la_chin.html">
+<img src="images/chinla1.jpg" name="chinla" height = "150" onmouseover="over(2)" onmouseout="out(2)"> </a>
+<br>
+
+<a target="_blank" href="ra_katz.html">
+<img src="images/katzra1.jpg" name="katzra" height = "150" onmouseover="over(3)" onmouseout="out(3)"> </a>
+<br>
+
+<a href="ka_alguard.html" target="_blank" >
+<img src="images/alguardka1.jpg" height = "150" name="alguardka" onmouseover="over(4)" onmouseout="out(4)"> </a>
+<br>
+
+<a target="_blank" href="ki_alguard.html">
+<img src="images/alguardki1.jpg" name="alguardki" height = "150" onmouseover="over(5)" onmouseout="out(5)"> </a>
+<br>
+
+<a target="_blank" href="si_iavarone.html">
+<img src="images/iavaronesi1.jpg" name="iavaronesi" height = "150" onmouseover="over(6)" onmouseout="out(6)"> </a>
+<br>
+
+</div>
+
+
+
+</body>
+</html>
+
+

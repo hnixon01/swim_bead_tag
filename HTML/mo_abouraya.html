@@ -1,81 +1,107 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+
+  <title>Abouraya, Mounir</title>
+    
+  <link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
 </head>
-<h1> THIS IS MOUNIR's PAGE  </h1>
-	<body>
-	
-	<body>	
-<div id="col-200fly"><a class="texthover" title="200 Butterfly">
-    <img src="images/fly_200.jpg" name="200 Butterfly" width ="51" height = "51"> </a>
+
+<div id="nav">
+    <div id = "navinside">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_new.html" target="_blank">About</a>
+            <li><a href="swimmer_flip.html" target="_blank">Swimmers</a>
+    </ul>
+  </div>
 </div>
 
-<div id="col-100fly"><a class="texthover" title="100 Butterfly">
-    <img src="images/fly_100.jpg" name="100 Butterfly" width ="51" height = "51"> </a>
-</div>
+<body>
 
-<div id="col-50fly"><a class="texthover" title="50 Butterfly">
-    <img src="images/fly_50.jpg" name="50 Butterfly" width ="51" height = "51"> </a>
-</div>
 
-<div id="col-200back"><a class="texthover" title="200 Backstroke">
-    <img src="images/back_200.jpg" name="200 Backstroke" width ="51" height = "51"> </a>
-</div>
+<script>
+window.onunload=function()
+{return true;};
 
-<div id="col-100back"><a class="texthover" title="100 Backstroke">
-    <img src="images/back_100.jpg" name="100 Backstroke" width ="51" height = "51"> </a>
-</div>
+</script>
 
-<div id="col-50back"><a class="texthover" title="50 Backstroke">
-    <img src="images/back_50.jpg" name="50 Backstroke" width ="51" height = "51"> </a>
-</div>
+<br>
+<h3> Mounir Abouraya </h3>
+<br>
 
-<div id="col-200breast"><a class="texthover" title="200 Breaststroke">
-    <img src="images/breast_200.jpg" name="200 Breaststroke" width ="51" height = "51"> </a>
-</div>
+   <a class="texthover" title="Mounir Abouraya"><img src="images/abouraya_mounir.jpg" id="swimmer" alt="Mounir Abouraya" height = "250"> </a>
 
-<div id="col-100breast"><a class="texthover" title="100 Breaststroke">
-    <img src="images/breast_100.jpg" name="100 Breaststroke" width ="51" height = "51"> </a>
-</div>
 
-<div id="col-50breast"><a class="texthover" title="50 Breaststroke">
-    <img src="images/breast_50.jpg" name="50 Breaststroke" width ="51" height = "51"> </a>
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<div id="col-500free"><a class="texthover" title="500 Freestyle">
-    <img src="images/free_500.jpg" name="500 Freestyle" width ="51" height = "51"> </a>
-</div>
 
-<div id="col-200free"><a class="texthover" title="200 Freestyle">
-    <img src="images/free_200.jpg" name="200 Freestyle" width ="51" height = "51"> </a>
-</div>
 
-<div id="col-100free"><a class="texthover" title="100 Freestyle">
-    <img src="images/free_100.jpg" name="100 Freestyle" width ="51" height = "51"> </a>
-</div>
+<fieldset class="group">
+<legend> Select Distance and Stroke </legend>
+<ul class="checkbox">
 
-<div id="col-50free"><a class="texthover" title="50 Freestyle">
-    <img src="images/free_50.jpg" name="50 Freestyle" width ="51" height = "51"> </a>
-</div>
-
-<div id="col-200im"><a class="texthover" title="200 Individual Medley">
-    <img src="images/im_200.jpg" name="200 Individual Medley" width ="51" height = "51"> </a>
-</div>
-
-<div id="col-100im"><a class="texthover" title="100 Individual Medley">
-    <img src="images/im_100.jpg" name="100 Individual Medley" width ="51" height = "51"> </a>
+<div id="checkboxes">
+    <li><label><input type="checkbox" name="stroke" value="images/fly_200.png" /> 200 Fly</label>
+    <li><label><input type="checkbox" name="stroke" value="images/fly_100.png" /> 100 Fly</label>
+    <li><label><input type="checkbox" name="stroke" value="images/fly_50.png" /> 50 Fly</label>
+    <li><label><input type="checkbox" value="images/back_200.png" /> 200 Back</label>
+    <li><label><input type="checkbox" value="images/back_100.png" /> 100 Back</label>
+    <li><label><input type="checkbox" value="images/back_50.png" /> 50 Back</label>
+    <li><label><input type="checkbox" value="images/breast_200.png" /> 200 Breast</label>
+    <li><label><input type="checkbox" value="images/breast_100.png" /> 100 Breast</label>
+    <li><label><input type="checkbox" value="images/breast_50.png" /> 50 Breast</label>
+    <li><label><input type="checkbox" value="images/free_500.png" /> 500 Free</label>
+    <li><label><input type="checkbox" value="images/free_200.png" /> 200 Free</label>
+    <li><label><input type="checkbox" value="images/free_100.png" /> 100 Free</label>
+    <li><label><input type="checkbox" value="images/free_50.png" /> 50 Free</label>
+    <li><label><input type="checkbox" value="images/im_200.png" /> 200 IM</label>
+    <li><label><input type="checkbox" value="images/im_100.png" /> 100 IM</label>
+    </ul>
+</fieldset>
+    
 </div>
 
 
 
-</body>
-</html>
 
 
 
+<div id="images">
+</div>
 
-	</body>
+<script>
 
-	
+//Add event handlers to all checkboxes:
+//Displays immages based on which stroke is selected.
+var checkboxesContainer = document.getElementById('checkboxes');
+var imagesContainer = document.getElementById('images');
+var inputElements = checkboxesContainer.getElementsByTagName('input');
+var element, i;
 
-</html>
+
+for(i = 0; element = inputElements[i]; i++) {
+    if(element.getAttribute('type') === 'checkbox') {
+        (function(el) {
+            el.onchange = function() {
+                if(el.checked) {
+                    var ae = document.createElement('img');
+                    ae.setAttribute('src', el.getAttribute('value'));
+                    imagesContainer.appendChild(ae);
+                    el.associatedElement = ae;
+                } else {
+                    el.associatedElement.parentNode.removeChild(el.associatedElement);
+                    delete el.associatedElement;
+                }
+            };
+        })(element);
+    }
+}
+
+</script>
+
+
+</div>
+
+    </body>
+    </html>
+

@@ -1,0 +1,45 @@
+
+<html>
+
+
+
+<div>
+  <p> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script></p>
+</div>
+<body>
+
+<div>
+
+  <p>
+  <script type="text/javascript">
+
+  function showpics(){
+
+    var pic= $("#box").val();
+    $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?tags='
+      +pic+"&tagmode=any&format=json&jsoncallback=?",
+      function(data){ $("#images").hide().html(data).fadeIn('fast');
+
+    $.each(data.items, function(i,item) {
+      $("<img/>").attr("src", item.media.m).appendTo("#images");
+    });
+  })
+};
+  </script>
+</p>
+</div>
+
+<div>
+
+  <p>
+  	<h1> Flickr Search Page</h1>
+    <h2>Enter the image you want to search for: </h2>
+    <input id="box" type="text">
+    <input id="button" title="Display Images" onclick="showpics()" type="button" value="Display Images">
+    <div id="images"></div>
+  </p>
+</div>
+
+
+</body>
+</html>

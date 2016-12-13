@@ -1,0 +1,172 @@
+<html>
+<head>
+
+	<title>Abouraya, Ruqayyah</title>
+
+	<link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
+</head>
+
+<body>  
+
+<h1> THIS IS RUQAYYAH's PAGE  </h1>
+
+   <a class="texthover" title="Ruqayyah Abouraya"><img src="images/abouraya_ruqayyah.jpg" alt="Ruqayyah Abouraya" height = "200"> </a>
+	<br>
+
+    <div class="content">
+        <div class ="left_block col-200fly"><a class="texthover" title="200 Butterfly">
+    <img src="images/fly_200.jpg" name="200 Butterfly" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-100fly"><a class="texthover" title="100 Butterfly">
+    <img src="images/fly_100.jpg" name="100 Butterfly" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-50fly"><a class="texthover" title="50 Butterfly">
+    <img src="images/fly_50.jpg" name="50 Butterfly" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-200back"><a class="texthover" title="200 Backstroke">
+    <img src="images/back_200.jpg" name="200 Backstroke" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-100back"><a class="texthover" title="100 Backstroke">
+    <img src="images/back_100.jpg" name="100 Backstroke" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-50back"><a class="texthover" title="50 Backstroke">
+    <img src="images/back_50.jpg" name="50 Backstroke" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-200breast"><a class="texthover" title="200 Breaststroke">
+    <img src="images/breast_200.jpg" name="200 Breaststroke" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-100breast"><a class="texthover" title="100 Breaststroke">
+    <img src="images/breast_100.jpg" name="100 Breaststroke" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-50breast"><a class="texthover" title="50 Breaststroke">
+    <img src="images/breast_50.jpg" name="50 Breaststroke" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-500free"><a class="texthover" title="500 Freestyle">
+    <img src="images/free_500.jpg" name="500 Freestyle" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-200free"><a class="texthover" title="200 Freestyle">
+    <img src="images/free_200.jpg" name="200 Freestyle" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-100free"><a class="texthover" title="100 Freestyle">
+    <img src="images/free_100.jpg" name="100 Freestyle" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block block-50free"><a class="texthover" title="50 Freestyle">
+    <img src="images/free_50.jpg" name="50 Freestyle" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-200im"><a class="texthover" title="200 Individual Medley">
+    <img src="images/im_200.jpg" name="200 Individual Medley" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+        <div class="left_block col-200im"><a class="texthover" title="100 Individual Medley">
+    <img src="images/im_100.jpg" name="100 Individual Medley" width ="65" height = "65"> </a>
+            <div class="content">
+            </div>
+        </div>
+
+<br>
+<br>
+
+
+        <br>
+            <table class="input container for swims">
+            <tr><td class="lbl">Distance and Stroke:</td>
+            <td><select name="stroke" id="stroke" class="stroke" style="width:150px;">
+            <option value=""></option>
+            <option value="200 Fly">200 Butterfly</option>
+            <option value="100 Fly">100 Butterfly</option>
+            <option value="50 Fly">50 Butterfly</option>
+            <option value="200 Back">200 Backstroke</option>
+            <option value="100 Back">100 Backstroke</option>
+            <option value="50 Back">50 Backstroke</option>
+
+
+            <tr><td class="lbl">New Event?</td>
+            <td><select name="Event" id="newEvent" class="Event" style="width:150px;">
+            <option value=""></option>
+            <option value="a new event">Yes</option>
+            <option value="not a new event">No</option>
+
+            <tr><td class="lbl">JO Cut?</td>
+            <td><select name="joCut" id="joCut" class="joCut" style="width:150px;">
+            <option value=""></option>
+            <option value="made a JO cut">Yes</option>
+            <option value="did not make a JO cut">No</option>
+
+            <tr><td class="lbl">Personal Best?</td>
+            <td><select name="bestTime" id="bestTime" class="bestTime" style="width:150px;">
+            <option value=""></option>
+            <option value="a personal best">Yes</option>
+            <option value="not a personal best">No</option>
+        </table>
+        <br>
+
+
+            <button type="button" onclick="listStroke()">Submit</button>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+function listStroke() {
+    var stroke = document.getElementById("stroke").value;
+    var newEvent = document.getElementById("newEvent").value;
+    var joCut = document.getElementById("joCut").value;
+    var bestTime = document.getElementById("bestTime").value;
+    document.getElementById("demo").innerHTML = "You swam " + stroke;
+    document.getElementById("demo1").innerHTML = "It was " + newEvent;
+    document.getElementById("demo2").innerHTML = "You " + joCut;
+    document.getElementById("demo3").innerHTML = "You swam " + bestTime;
+}
+
+</script>
+
+            <br>
+            <br>
+</body>
+</html>
+
+

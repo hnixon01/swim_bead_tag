@@ -1,0 +1,69 @@
+<html>
+<head>
+
+	<title>About</title>
+
+	<link rel="stylesheet" type="text/css" href="mystyleTEST.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+
+<div id="nav">
+    <div id = "navinside">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a>
+            <li><a href="swimmers.html" target="_blank">Swimmers</a>
+    </ul>
+  </div>
+</div>
+
+
+<br>
+
+<h1> BEA(t)D my TIME </h1>
+<h2> Swimming Incentive Program</h2>
+<body>
+
+
+<br><br>
+
+
+<img src="images/bead_chart.jpg" id="beadChart" alt="beadchart" >
+
+<script>
+
+ $(document).ready(function(){
+       $('#beadChart').width(200);
+       $('#beadChart').mouseover(function()
+       {
+          $(this).css("cursor","pointer");
+          $(this).animate({width: "500px"}, 'slow');
+       });
+    
+    $('#beadChart').mouseout(function()
+      {   
+          $(this).animate({width: "200px"}, 'slow');
+       });
+   });
+
+ </script>
+
+<div class="chart">
+
+After every swim meet, RMSC swimmers on the Advanced Junior Team are given colored beads to add to their bag tags.  Each bead color is related to the certain distance and stroke.  There are also beads representing a "best time" as well as beads that represent a Junior Olympic Championships qualifying time.  For meets that require qualifytime times, there are also bonus beads representing that specific meet.  
+
+<p>This bead reward program is not only to enourage swimmers to try different distances and strokes instead of "specializing" in particular strokes but also as incentive program.  By the swimmers continually adding the rewards to their bead tag, they can visually see and display their progress in the sport.
+
+
+</div>
+<br><br><br>
+
+     <a class="texthover" title="RMSC" href = "http://www.rmscswimming.com" target="_blank"><img src="images/rmsc_logo.png" height = "20%" alt="RMSC" > </a>
+
+
+</body>
+</html>
+
+
+
